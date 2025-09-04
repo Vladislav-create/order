@@ -16,8 +16,9 @@
   background-color: #10101D;
   opacity: 90%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 400px;
+  gap: 21%;
 }
 .header__title {
   font-family: Raleway;
@@ -360,6 +361,7 @@
 }
 .footer__contacts {
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
 }
 .footer__contacts a {
@@ -373,4 +375,97 @@
   letter-spacing: 0%;
   vertical-align: middle;
   text-decoration: none;
+}
+
+@media (max-width: 460px) {
+  .header__title {
+    font-size: 24px;
+  }
+  .header__menu {
+    gap: 25px;
+  }
+  .mainImg__content {
+    padding-top: 225px;
+  }
+  .mainImg__content__title {
+    font-size: 20px;
+  }
+  .mainImg__content__items {
+    padding-top: 30px;
+  }
+  .mainImg__content__btn {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainImg__content__btn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+  }
+  .order__stages {
+    flex-direction: column;
+  }
+  .order__stages__decorPoints {
+    display: none;
+  }
+  .order__form {
+    margin-bottom: 30px;
+  }
+  .order__form__box {
+    flex-wrap: wrap;
+  }
+  .order__form__box__userData {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .order__form__box__userData__item {
+    width: 250px;
+  }
+  .order__form__box__rangeFileBox {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .order__form__box__rangeFileBox__fileInput {
+    left: -500px;
+  }
+  .order__form__box__rangeFileBox__boxForRange section p {
+    font-size: 13px;
+    padding-right: 10px;
+  }
+  .order__form__box__rangeFileBox__boxForRange--decorRange {
+    max-width: 250px;
+  }
+  .order__form__box__rangeFileBox__fileInput--label {
+    max-width: 250px;
+  }
+  .order__title {
+    justify-content: center;
+    align-items: center;
+  }
+  .order__btn {
+    padding: 13px 29px;
+  }
+  .footer {
+    flex-direction: column;
+    min-height: 180px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .footer__copyright {
+    border: none;
+  }
+  .footer__copyright p {
+    padding-right: 0px;
+  }
+  .footer__payments {
+    gap: 10px;
+    border: none;
+  }
+  .footer__payments__btn {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=style.css.map */

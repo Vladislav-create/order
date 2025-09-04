@@ -14,8 +14,9 @@
     background-color: #10101D;
     opacity: 90%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 400px;
+    gap: 21%;
     &__title{
         font-family: Raleway;
         font-weight: 800px;
@@ -354,6 +355,7 @@
     }
     &__contacts{
         display: flex;
+        flex-wrap: wrap;
         gap: 40px;
         a{
             display: flex;
@@ -366,6 +368,108 @@
             letter-spacing: 0%;
             vertical-align: middle;
             text-decoration: none;
+        }
+    }
+}
+@media (max-width: 460px) {
+    .header{
+        &__title{
+            font-size: 24px;
+        }
+        &__menu{
+            gap: 25px;
+        }
+    }
+    .mainImg{
+        &__content{
+            padding-top: 225px;
+            &__title{
+                font-size: 20px;
+            }
+            &__items{
+                padding-top: 30px;
+            }
+            &__btn{
+                flex-direction: column;
+                                    justify-content: center;
+                    align-items: center;
+                button{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    max-width: 250px;
+                }
+            }
+        }
+    }
+    .order{
+        &__stages{
+            flex-direction: column;
+            &__decorPoints{
+                display: none;
+            }
+        }
+        &__form{
+            margin-bottom: 30px;
+            &__box{
+                flex-wrap: wrap;
+                &__userData{
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    &__item{
+                        width: 250px;
+                    }
+                }
+                &__rangeFileBox{
+                                        justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    &__fileInput{
+                        left: -500px;
+                    }
+                    &__boxForRange{
+                        section{
+                            p{
+                                font-size: 13px;
+                                padding-right: 10px;
+                            }
+                        }
+                    }
+                    &__boxForRange--decorRange{
+                        max-width: 250px;
+                    }
+                    &__fileInput--label{
+                        max-width: 250px;
+                    }
+                }
+            }
+        }
+        &__title{
+            justify-content: center;
+            align-items: center;
+        }
+        &__btn{
+            padding: 13px 29px;
+        }
+    }
+    .footer{
+        flex-direction: column;
+        min-height: 180px;
+        justify-content: space-evenly;
+        align-items: center;
+        &__copyright{
+            border: none;
+            p{
+                padding-right: 0px;
+            }
+        }
+        &__payments{
+            gap: 10px;
+            border: none;
+            &__btn{
+                font-size: 12px;
+            }
         }
     }
 }
